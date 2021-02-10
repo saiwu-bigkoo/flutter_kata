@@ -1,5 +1,5 @@
-import 'package:kata/http/HttpCallback.dart';
-import 'package:kata/viewable/BaseListViewable.dart';
+import 'package:flutter_kata/http/HttpCallback.dart';
+import 'package:flutter_kata/viewable/BaseListViewable.dart';
 
 import 'BaseDataPresenter.dart';
 

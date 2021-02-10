@@ -1,7 +1,6 @@
-import 'package:dio/dio.dart';
-import 'package:kata/http/DioManager.dart';
-import 'package:kata/http/HttpCallback.dart';
-import 'package:kata/viewable/BaseDataViewable.dart';
+import 'package:flutter_kata/http/HttpManager.dart';
+import 'package:flutter_kata/http/HttpCallback.dart';
+import 'package:flutter_kata/viewable/BaseDataViewable.dart';
 
 abstract class BaseDataPresenter<V extends BaseDataViewable>{
   V viewable;
@@ -83,15 +82,15 @@ abstract class BaseDataPresenter<V extends BaseDataViewable>{
 
   void dispose() {
     viewable = null;
-    DioManager.instance.cancel(getTagName());
+    HttpManager.instance.cancel(getTagName());
   }
 
   HttpCallback callBack;
   /// 网络请求
-  Future<Response> onLoadDataHttpRequest();
+  Future onLoadDataHttpRequest();
   void onLoadData();
 
-  void onCallHttpRequest(Future<Response> future, [HttpCallback httpCallback]) async {
+  void onCallHttpRequest(Future future, [HttpCallback httpCallback]) async {
     await future.then((value) => httpCallback?.onResponse(value)).catchError((e){httpCallback?.onException(e);}).whenComplete(() => httpCallback?.onComplete());
   }
 

@@ -1,3 +1,3 @@
-## [0.0.1] - TODO: Add release date.
+## [1.0.0] - 2021/02/09.
 
-* TODO: Describe initial release.
+* kata第一稿.

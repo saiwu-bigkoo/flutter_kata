@@ -1,5 +1,5 @@
-import 'package:kata/http/HttpCallback.dart';
-import 'package:kata/viewable/BaseDataViewable.dart';
+import 'package:flutter_kata/http/HttpCallback.dart';
+import 'package:flutter_kata/viewable/BaseDataViewable.dart';
 import 'BaseDataPresenter.dart';
 
 abstract class BaseDetailPresenter<V extends BaseDataViewable> extends BaseDataPresenter<V>{

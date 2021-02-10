@@ -1,16 +1,16 @@
 # flutter_kata
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
-[![Pub](https://img.shields.io/badge/pub-v2.1.8-orange.svg)](https://pub.dartlang.org/packages/kata)
+[![Pub](https://img.shields.io/badge/pub-v2.1.8-orange.svg)](https://pub.dartlang.org/packages/flutter_kata)
 
-## [English](https://github.com/saiwu-bigkoo/flutter_kata/README_EN.md) | 中文
+## [English](https://github.com/saiwu-bigkoo/flutter_kata/blob/master/README_EN.md) | 中文
 
 正如名字一样，使用套路把应用快速搭建起来，统一封装统一分发处理统一格式，让新手也可以无脑上手开发。
 
 
 ## 传送门
 
- - [更新日志]套路已成熟，基本不更除非有重大思维突破
+ - [更新日志](https://github.com/saiwu-bigkoo/flutter_kata/blob/master/CHANGELOG_CN.md)
 
 
 #### Kata与它的后宫们
@@ -20,7 +20,7 @@
 ```
 //pub方式
 dependencies:
-  flutter_kata: ^0.0.1
+  flutter_kata: ^1.0.0
 
 //导入方式
 dependencies:

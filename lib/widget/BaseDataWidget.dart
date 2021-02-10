@@ -1,18 +1,8 @@
 import 'package:flutter/widgets.dart';
-import 'package:kata/presenter/BaseDataPresenter.dart';
-import 'package:kata/viewable/BaseDataViewable.dart';
+import 'package:flutter_kata/presenter/BaseDataPresenter.dart';
+import 'package:flutter_kata/viewable/BaseDataViewable.dart';
 
-abstract class BaseDataWidget extends StatefulWidget{
-  BaseDataWidget({ Key key }) : super(key: key);
-  @override
-  State createState(){
-    return getState() ;
-  }
-
-  State getState();
-}
-
-abstract class BaseDataWidgetState<W extends BaseDataWidget, P extends BaseDataPresenter> extends State<W> implements BaseDataViewable {
+abstract class BaseDataWidgetState<W extends StatefulWidget, P extends BaseDataPresenter> extends State<W> implements BaseDataViewable {
 
   P presenter;
 

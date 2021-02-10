@@ -1,21 +1,11 @@
 
 import 'package:flutter/widgets.dart';
-import 'package:kata/presenter/BaseListPresenter.dart';
-import 'package:kata/viewable/BaseListViewable.dart';
+import 'package:flutter_kata/presenter/BaseListPresenter.dart';
+import 'package:flutter_kata/viewable/BaseListViewable.dart';
 
 import 'BaseDataWidget.dart';
 
-abstract class BaseListWidget extends BaseDataWidget{
-  BaseListWidget({ Key key }) : super(key: key);
-  @override
-  State createState(){
-    return getState() ;
-  }
-
-  State getState();
-}
-
-abstract class BaseListWidgetState<W extends BaseListWidget, P extends BaseListPresenter> extends BaseDataWidgetState<W, P> implements BaseListViewable {
+abstract class BaseListWidgetState<W extends StatefulWidget, P extends BaseListPresenter> extends BaseDataWidgetState<W, P> implements BaseListViewable {
   @override
   void onLoadingMore(bool isLoadingMore) {
   }
@@ -35,7 +25,7 @@ abstract class BaseListWidgetState<W extends BaseListWidget, P extends BaseListP
           onStatusEmpty(msg);
         }
     }
-    else if (size < presenter.getPageSize()) {
+    if (size < presenter.getPageSize()) {
       presenter.setHasMore(false);
     }
 
