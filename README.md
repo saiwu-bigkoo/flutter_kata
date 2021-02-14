@@ -1,7 +1,7 @@
 # flutter_kata
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](/LICENSE)
-[![Pub](https://img.shields.io/badge/pub-v2.1.8-orange.svg)](https://pub.dartlang.org/packages/flutter_kata)
+[![Pub](https://img.shields.io/badge/pub-v1.0.0-orange.svg)](https://pub.dartlang.org/packages/flutter_kata)
 
 ## [English](https://github.com/saiwu-bigkoo/flutter_kata/blob/master/README_EN.md) | 中文
 
