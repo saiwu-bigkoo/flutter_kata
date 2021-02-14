@@ -13,7 +13,10 @@
  - [更新日志](https://github.com/saiwu-bigkoo/flutter_kata/blob/master/CHANGELOG_CN.md)
 
 
-#### Kata与它的后宫们
+#### Kata的使用demo
+
+ - [naturahome](https://github.com/saiwu-bigkoo/flutter_kata/blob/master/CHANGELOG_CN.md)
+
 
 ## 简单用例
 #### 1.在 pubspec.yaml 中添加依赖
@@ -32,9 +35,6 @@ dependencies:
   flutter_kata:
     git:
       url: git://github.com/saiwu-bigkoo/flutter_kata.git
-```
-#### 如何使用？
-```dart
 ```
 
 
