@@ -15,7 +15,7 @@
 
 #### Kata的使用demo
 
- - [naturahome](https://github.com/saiwu-bigkoo/flutter_kata/blob/master/CHANGELOG_CN.md)
+ - [naturahome](https://github.com/saiwu-bigkoo/NaturalHome)
 
 
 ## 简单用例
